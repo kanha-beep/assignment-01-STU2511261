@@ -1,7 +1,7 @@
 ## Anomaly Analysis
 
 ### Insert Anomaly
-The file cannot store a new product or a new sales representative unless an order already exists for them, because product and representative attributes are embedded inside an order row. For example, row 12 stores `product_id = P008`, `product_name = Webcam`, `category = Electronics`, and `unit_price = 2100` only because order `ORD1185` exists in the same row. If the company wants to add a new product before it is sold, there is no place to insert just the product details without also inventing values for `order_id`, `customer_id`, `order_date`, and `sales_rep_id`.
+The file cannot store a new product or a new sales representative unless an order already exists for them, because product and representative attributes are embedded inside an order row. For example, row 12 stores "`product_id = P008`, `product_name = Webcam"`, `category = Electronics`, and `unit_price = 2100` only because order `ORD1185` exists in the same row. If the company wants to add a new product before it is sold, there is no place to insert just the product details without also inventing values for `order_id`, `customer_id`, `order_date`, and `sales_rep_id`.
 
 ### Update Anomaly
 Customer details are repeated across many rows, so one real-world change requires many row updates. For customer `C002` (`Priya Sharma`), the same `customer_email` and `customer_city` are repeated in rows 1, 4, 7, 20, and several later rows. Those values live in columns `customer_name`, `customer_email`, and `customer_city`. If Priya changes her email address, every row for `C002` must be updated; missing even one row creates inconsistent customer data.

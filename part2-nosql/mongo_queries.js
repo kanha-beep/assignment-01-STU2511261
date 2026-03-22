@@ -33,7 +33,6 @@ async function run() {
     );
 
     // OP5: createIndex() — create an index on category field and explain why
-    // This index improves performance for category-based filtering queries.
     await products.createIndex({ category: 1 });
   } finally {
     await client.close();

@@ -25,7 +25,7 @@ GROUP BY s.store_name, s.store_city
 ORDER BY total_revenue DESC
 LIMIT 2;
 
--- Q3: Month-over-month sales trend across all stores
+-- Q3: Month-over-month sales across all stores
 SELECT
     d.year_number,
     d.month_number,
