@@ -1,0 +1,47 @@
+[
+  {
+    "product_id": "ELEC101",
+    "category": "Electronics",
+    "product_name": "UltraBook Pro 14",
+    "price": 64999,
+    "brand": "Dell",
+    "warranty_years": 2,
+    "specs": {
+      "ram": "16GB",
+      "storage": "512GB SSD",
+      "voltage": "220V",
+      "processor": "Intel Core i7"
+    },
+    "features": ["Backlit keyboard", "Fingerprint reader", "Wi-Fi 6"]
+  },
+  {
+    "product_id": "CLOT205",
+    "category": "Clothing",
+    "product_name": "Slim Fit Denim Jeans",
+    "price": 1999,
+    "brand": "Levis",
+    "details": {
+      "fabric": "Denim",
+      "fit": "Slim",
+      "gender": "Unisex"
+    },
+    "sizes": ["M", "L", "XL"],
+    "colors": ["Blue", "Black"]
+  },
+  {
+    "product_id": "GROC310",
+    "category": "Groceries",
+    "product_name": "Organic Milk 1L",
+    "price": 60,
+    "expiry_date": "2024-12-20",
+    "nutrition": {
+      "calories": 150,
+      "protein": "8g",
+      "fat": "5g"
+    },
+    "storage": {
+      "type": "Refrigerated",
+      "temperature_celsius": "2-4"
+    }
+  }
+]
